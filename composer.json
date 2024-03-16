@@ -1,0 +1,38 @@
+{
+    "name": "dhs/cloudwatch-laravel-log",
+    "description": "Push logs to cloudwatch for Laravel >= 9",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "aws",
+        "cloudwatch",
+        "monolog",
+        "laravel 10 cloudwatch log",
+        "laravel cloudwatch log",
+        "laravel 9 cloudwatch log",
+        "laravel cloudwatch php"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dhs\\CloudWatchLogs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dinhhongson"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1",
+        "monolog/monolog": "^3.0",
+        "aws/aws-sdk-php": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
