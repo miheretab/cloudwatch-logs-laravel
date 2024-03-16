@@ -19,7 +19,7 @@ $ composer require dhs/cloudwatch-laravel-log:dev-master
 ```
 
 ## Basic Laravel Usage
- - Create folder Logging and create a file CloudWatchLoggerFactory.php
+ - Create a folder Logging and create a file CloudWatchLoggerFactory.php
  - Guide Link: [Guid](https://s2sontech.com/php-and-laravel/laravel-10-logging-aws-cloudwatch)
 ```php
 <?php
@@ -74,6 +74,8 @@ class CloudWatchLoggerFactory
 ```
 
 ## Config Usage
+ - open file logging.php in folder config in laravel app and add the code config below
+
 ```php
 <?php
 return [
