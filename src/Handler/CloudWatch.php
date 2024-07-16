@@ -88,7 +88,7 @@ class CloudWatch extends AbstractProcessingHandler
         $this->savedTime = new \DateTime();
     }
 
-    protected function write(LogRecord $record): void
+    protected function write(array $record): void
     {
         $records = $this->formatRecords($record);
 
