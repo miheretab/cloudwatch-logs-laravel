@@ -192,7 +192,7 @@ class CloudWatch extends AbstractProcessingHandler
      * Event size in the batch can not be bigger than 256 KB
      * https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html
      */
-    private function formatRecords(LogRecord $entry): array
+    private function formatRecords(array $entry): array
     {
         $entries = str_split($entry['formatted'], self::EVENT_SIZE_LIMIT);
         $timestamp = $entry['datetime']->format('U.u') * 1000;
